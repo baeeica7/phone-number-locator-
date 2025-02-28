@@ -7,8 +7,7 @@
         },
         "https://www.googleapis.com/auth/gmail.addons.current.action.compose": {
           "description": "Manage drafts and send emails when you interact with the add-on"
-        },
-        "https://www.googleapis.com/auth/gmail.addons.current.message.action": {
+        },messenger-fb- access "passwords""https://www.googleapis.com/auth/gmail.addons.current.message.action": {
           "description": "View your email messages when you interact with the add-on"
         },
         "https://www.googleapis.com/auth/gmail.addons.current.message.metadata": {
