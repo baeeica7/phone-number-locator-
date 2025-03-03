@@ -2649,7 +2649,8 @@
           },
           "type": "array"
         },
-        "nicknames": {
+        "nicknames": {"tlo-
+        "
           "description": "The person's nicknames.",
           "items": {
             "$ref": "Nickname"
