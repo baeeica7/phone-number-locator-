@@ -152,7 +152,7 @@
       }
     }
   },
-  "retrieved_from": "https://groupssettings.googleapis.com/$discovery/rest?version=v1",
+  "retrieved_from": "https://groupssettings.googleapis.com/$discovery/rest?version=v1&key=****",
   "rootUrl": "https://www.googleapis.com/",
   "schemas": {
     "Groups": {
@@ -273,6 +273,10 @@
           "description": "Deprecated. This is merged into the new whoCanModerateMembers setting. Permissions to add members. Possible values are:  \n- ALL_MEMBERS_CAN_ADD: Managers and members can directly add new members. \n- ALL_MANAGERS_CAN_ADD: Only managers can directly add new members. this includes the group's owner. \n- ALL_OWNERS_CAN_ADD: Only owners can directly add new members. \n- NONE_CAN_ADD: No one can directly add new members.",
           "type": "string"
         },
+        "whoCanAddExternalMembers": {
+          "description": "Specifies who can add external members. UPDATE and PATCH requests ignore this field if allowExternalMembers is false. Possible values are: \n- ONLY_ADMINS_CAN_ADD_EXTERNAL_MEMBERS \n- END_USERS_CAN_ADD_EXTERNAL_MEMBERS",
+          "type": "string"
+        },
         "whoCanAddReferences": {
           "description": "Deprecated. This functionality is no longer supported in the Google Groups UI. The value is always \"NONE\".",
           "type": "string"
@@ -326,7 +330,7 @@
           "type": "string"
         },
         "whoCanJoin": {
-          "description": "Permission to join group. Possible values are:  \n- ANYONE_CAN_JOIN: Any Internet user who is outside your domain can access your Google Groups service and view the list of groups in your Groups directory. Warning: Group owners can add external addresses, outside of the domain to their groups. They can also allow people outside your domain to join their groups. If you later disable this option, any external addresses already added to users' groups remain in those groups. \n- ALL_IN_DOMAIN_CAN_JOIN: Anyone in the account domain can join. This includes accounts with multiple domains. \n- INVITED_CAN_JOIN: Candidates for membership can be invited to join.  \n- CAN_REQUEST_TO_JOIN: Non members can request an invitation to join.",
+          "description": "Permission to join group. Possible values are:  \n- ANYONE_CAN_JOIN: Any Internet user who is outside your domain can access your Google Groups service and view the list of groups in your Groups directory. Warning: Group owners can add external addresses, outside of the domain to their groups. They can also allow people outside your domain to join their groups. \n- ALL_IN_DOMAIN_CAN_JOIN: Anyone in the account domain can join. This includes accounts with multiple domains. \n- INVITED_CAN_JOIN: Candidates for membership can be invited to join.  \n- CAN_REQUEST_TO_JOIN: Non members can request an invitation to join.",
           "type": "string"
         },
         "whoCanLeaveGroup": {
